@@ -31,24 +31,31 @@
                         </div>
                         <div class="py-4">
                             <h4>Memory</h4>
-                            <button type="button" class="btn btn-light btn-outline-dark btn-sm">8GB unifield
+                            <button id="memory-btn-8gb" type="button" class="btn btn-light btn-outline-dark btn-sm">8GB
+                                unifield
                                 memory</button>
-                            <button type="button" class="btn btn-light btn-outline-dark btn-sm">16GB unifield
+                            <button id="memory-btn-16gb" type="button"
+                                class="btn btn-light btn-outline-dark btn-sm">16GB unifield
                                 memory</button>
                         </div>
                         <div>
                             <h4>Storage</h4>
-                            <button type="button" class="btn btn-light btn-outline-dark btn-sm">256GB SSD
+                            <button id="storage-btn-256gb" type="button"
+                                class="btn btn-light btn-outline-dark btn-sm">256GB SSD
                                 storage</button>
-                            <button type="button" class="btn btn-light btn-outline-dark btn-sm">256GB SSD
+                            <button id="storage-btn-512gb" type="button"
+                                class="btn btn-light btn-outline-dark btn-sm">512GB SSD
                                 storage</button>
-                            <button type="button" class="btn btn-light btn-outline-dark btn-sm">1TB SSD storage</button>
+                            <button id="storage-btn-1tb" type="button" class="btn btn-light btn-outline-dark btn-sm">1TB
+                                SSD storage</button>
                         </div>
                         <div class="py-4">
                             <h4>Choose your delivery option</h4>
-                            <button type="button" class="btn btn-light btn-outline-dark btn-sm">Friday, Aug 25 FREE
+                            <button id="delivery-cost-free" type="button"
+                                class="btn btn-light btn-outline-dark btn-sm">Friday, Aug 25 FREE
                                 prime delivery</button>
-                            <button type="button" class="btn btn-light btn-outline-dark btn-sm">Friday, Aug 21 delivery
+                            <button id="delivery-cost-price" type="button"
+                                class="btn btn-light btn-outline-dark btn-sm">Friday, Aug 21 delivery
                                 charge $20</button>
                         </div>
                         <div class="row gx-5 mx-auto p-1">
@@ -56,47 +63,50 @@
                                 <h6 class="fw-bold">Best Price</h6>
                             </div>
                             <div class="col">
-                                <h6 class="fw-bold">$1299</h6>
-                            </div>
-                        </div>
-                        <div class="row gx-5 mx-auto p-1">
-                            <div class="col">
-                                <h6 class="fw-bold">Extra Memory Cost</h6>
-                            </div>
-                            <div class="col">
-                                <h6 class="fw-bold">$0</h6>
-                            </div>
-                        </div>
-                        <div class="row gx-5 mx-auto p-1">
-                            <div class="col">
-                                <h6 class="fw-bold">Extra Storage Cost</h6>
-                            </div>
-                            <div class="col">
-                                <h6 class="fw-bold">$0</h6>
-                            </div>
-                        </div>
-                        <div class="row gx-5 mx-auto p-1">
-                            <div class="col">
-                                <h6 class="fw-bold">Delivery Charge</h6>
-                            </div>
-                            <div class="col">
-                                <h6 class="fw-bold">$0</h6>
+                                <h6 class="fw-bold">$<span id="best-price">1299</span></h6>
                             </div>
                         </div>
                         <hr class="border border-dark">
                         <div class="row gx-5 mx-auto p-1">
                             <div class="col">
+                                <h6 class="fw-bold">Extra Memory Cost</h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="fw-bold">$<span id="extra-memory-cost">0</span></h6>
+                            </div>
+                        </div>
+                        <hr class="border border-dark">
+                        <div class="row gx-5 mx-auto p-1">
+                            <div class="col">
+                                <h6 class="fw-bold">Extra Storage Cost</h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="fw-bold">$<span id="extra-storage-cost">0</span></h6>
+                            </div>
+                        </div>
+                        <hr class="border border-1 border-dark">
+                        <div class="row gx-5 mx-auto p-1">
+                            <div class="col">
+                                <h6 class="fw-bold">Delivery Charge</h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="fw-bold">$<span id="delivery-charge">0</span></h6>
+                            </div>
+                        </div>
+                        <hr class="border border-2 border-success">
+                        <div class="row gx-5 mx-auto p-1">
+                            <div class="col">
                                 <h6 class="fw-bold">Total</h6>
                             </div>
                             <div class="col">
-                                <h6 class="fw-bold">$1299</h6>
+                                <h6 class="fw-bold">$<span id="total-price">1299</span></h6>
                             </div>
                         </div>
                         <div>
                             <p class="fw-bold">Add Pomo code</p>
                             <div class="mb-3">
-                                <input type="text" placeholder="add your pomo code">
-                                <button class="btn btn-danger" type="button">Button</button>
+                                <input id="pomo-input" type="text" placeholder="add your pomo code">
+                                <button id="pomo-btn" class="btn btn-danger" type="button">Button</button>
                             </div>
                         </div>
                     </div>
@@ -109,7 +119,7 @@
                 <h1>Total:</h1>
             </div>
             <div class="d-inline-block">
-                <h1>$1200</h1>
+                <h1>$<span id="discount-total">1299</span></h1>
             </div>
         </section>
     </main>
