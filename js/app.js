@@ -67,4 +67,14 @@ document.getElementById('delivery-cost-price').addEventListener('click', functio
     totalPrice('discount-total');
 })
 
-
+document.getElementById('pomo-btn').addEventListener('click', function () {
+    const discountInput = document.getElementById('discount-total');
+    const discountValue = discountInput.innerText;
+    const pomoInput = document.getElementById('pomo-input');
+    const pomoValue = pomoInput.value;
+    if (pomoValue == 'stevekaku') {
+        const discountNum = parseFloat(discountValue) / 5;
+        discountInput.innerText = discountValue - discountNum;
+    }
+    pomoInput.value = '';
+})
